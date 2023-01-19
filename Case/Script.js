@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const filelocation = process.argv[2];
+
 class Card {
   constructor(name) {
     this.name = name;
@@ -28,7 +30,7 @@ const readline = require("readline");
 const Array = [];
 
 async function processLineByLine() {
-  const fileStream = fs.createReadStream("./input_20230116a");
+  const fileStream = fs.createReadStream(filelocation);
 
   const rl = readline.createInterface({
     input: fileStream,

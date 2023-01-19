@@ -1,0 +1,8 @@
+{
+  "name": "RandomFiles",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node Script.js ./test",
+    "example": "node Script.js ./input_20230116a"
+  }
+}
